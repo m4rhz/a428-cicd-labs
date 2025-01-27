@@ -16,7 +16,7 @@ pipeline {
                 sh './jenkins/scripts/test.sh'
             }
         }
-        stage('Approval') {
+        stage('Manual Approval') {
             steps {
                 input message: 'Apakah aplikasi siap untuk di-deploy? (Klik "Proceed" untuk melanjutkan)'
             }
